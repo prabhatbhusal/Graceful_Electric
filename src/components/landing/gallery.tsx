@@ -140,13 +140,13 @@ const GallerySlider = () => {
   };
 
   return (
-    <div className="relative h-[637px] overflow-hidden bg-[#0d1a1b] pl-62.5 ">
+    <div className="relative h-[637px] overflow-hidden bg-[#0d1a1b] md:pl-62.5 pl-10">
       {/* Gallery Title - Top Left */}
       <div
         ref={galleryTextRef}
-        className="absolute top-0 z-20 w-[300px]  "
+        className="absolute top-0 z-20 md:w-[300px]  "
       >
-        <h2 className="text-[11rem] w-[300px] font-ranade font-bold text-[#243131] ">
+        <h2 className="md:text-[11rem] text-[5rem] md:w-[300px] font-ranade font-bold text-[#243131] ">
           gallery
         </h2>
       </div>
@@ -154,7 +154,7 @@ const GallerySlider = () => {
       {/* Image Container */}
       <div
         ref={containerRef}
-        className="flex h-full items-center  gap-5 overflow-x-auto scrollbar-hide absolute top-0 left-[250px]  cursor-grab active:cursor-grabbing"
+        className="flex h-full items-center  gap-5 overflow-x-auto scrollbar-hide absolute top-0 md:left-[250px]  cursor-grab active:cursor-grabbing"
         style={{
           width: 'calc(100% - 62.5px)',
           scrollSnapType: 'x mandatory',
@@ -167,7 +167,7 @@ const GallerySlider = () => {
         {totalGallery.map((img, index) => (
           <div
             key={`${img.src}-${index}`}
-            className="gallery-image relative h-[637px] w-[340px] flex-shrink-0 transition-all duration-700 ease-in-out will-change-transform scroll-snap-align-start"
+            className="gallery-image relative md:h-[637px] md:w-[340px] flex-shrink-0 transition-all duration-700 ease-in-out will-change-transform scroll-snap-align-start"
           >
             <Image
               src={img.src}

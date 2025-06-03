@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <section className="font-ranade relative w-full bottom-0 md:px-62.5 p-10 md:py-5  text-lg bg-[url(/images/aboutus.png)] bg-blend-overlay bg-cover bg-center bg-no-repeat  text-white ">
       <div className="flex md:flex-row flex-col justify-center  md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-center md:gap-90 gap-10 p-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-center md:gap-90 gap-10 md:p-10 ">
           {footer.map((item) => (
             <div className="flex flex-col gap-5" key={item.id}>
               <h2 className="text-2xl">{item.title}</h2>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-3  p-8 ">
+        <div className="flex flex-col gap-3  md:p-8 py-4 ">
           <h2 className="text-2xl ">Contact Us</h2>
           <p className="text-lg flex items-center gap-3">
             <MdOutlinePhone className="text-2xl" />
