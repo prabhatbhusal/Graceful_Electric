@@ -13,7 +13,7 @@ type Review = {
 };
 
 const ReviewCard = ({ review }: { review: Review }) => (
-  <div className="w-full md:h-[268px] flex flex-col justify-center items-center flex-shrink-0 font-ranade bg-[#1f2f30] text-white p-[30px] my-2 rounded-lg">
+  <div className="md:w-full md:h-[268px] flex flex-col justify-center items-center flex-shrink-0 font-ranade bg-[#1f2f30] text-white p-[30px] my-2 ">
     <div className="text-yellow-400 md:text-xl text-lg mb-2">
       {'★'.repeat(review.rating)}
     </div>
@@ -45,14 +45,14 @@ export default function ReviewSlider() {
   }, []);
 
   return (
-    <div className="bg-[url(/images/testimonials.png)] px-62.5 py-37.5">
+    <div className="bg-[url(/images/testimonials.png)] px-70.5 py-37.5">
       <div className='flex md:flex-row flex-col items-center justify-center mb-10'>
         <OutlineLetter letter='T' color='#243131' font="text-[11rem]"/>
         <h2 className="text-white text-5xl text-center mb-8 font-boska1">
           WHAT OUR <br /> <span className="font-extrabold font-boska">CUSTOMERS ARE SAYING</span>
         </h2>
       </div>
-      <div className='flex md:flex-row flex-col gap-20 justify-center text-white items-center'>
+      <div className='flex md:flex-row flex-col gap-40 px-20 justify-center text-white items-center'>
         <div className='flex flex-1 flex-col  gap-5   mb-10 md:mb-0 md:w-1/3 w-full'>
         <div>
           <h2 className='md:text-5xl font-boska1 font-bold '>Grace Electric in Action</h2>
@@ -67,7 +67,7 @@ From the first wire to the final switch, we focus on doing the job right the fir
       
       <div
         ref={containerRef}
-        className="flex flex-col flex-1 overflow-y-auto scrollbar-hidden h-96"
+        className="flex flex-col flex-1 overflow-y-auto scrollbar-hidden h-100"
         style={{ scrollBehavior: 'smooth' }}
       >
         {[...reviews, ...reviews].map((review, i) => (
