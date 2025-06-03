@@ -214,14 +214,18 @@ export const image=[
 export const about=[
     {
         id: 1,
-        title: "ABOUT GRACE ELECTRICAL",
-        content: "Grace Electric LLC is a fully licensed and insured electrical company gratefully serving Central Origen. With 5+ years of industry experience, we specialize in residential, commercial, and emergency electrical services. Our team is committed to safety, precision, and customer satisfaction — whether it's a small repair or a full-scale installation. From the first wire to the final switch, we focus on doing the job right the first time. At Grace Electric, we don't just deliver power — we deliver peace of mind."
-        ,url:'/images/about.png'
+        title: "ABOUT ",
+        title1: " GRACE ELECTRICAL",
+        content: "Grace Electric LLC is a fully licensed and insured electrical company gratefully serving Central Origen. With 5+ years of industry experience, we specialize in residential, commercial, and emergency electrical services. Our team is committed to safety, precision, and customer satisfaction — whether it's a small repair or a full-scale installation.",
+        content1:"From the first wire to the final switch, we focus on doing the job right the first time. At Grace Electric, we don't just deliver power — we deliver peace of mind.",
+        url:'/images/about.png'
     },
     {
         id: 2,
-        title: "OUR MISSION & VALUES",
-        content: "Grace Electric LLC is a fully licensed and insured electrical company gratefully serving Central Origen. With 5+ years of industry experience, we specialize in residential, commercial, and emergency electrical services. Our team is committed to safety, precision, and customer satisfaction — whether it's a small repair or a full-scale installation. From the first wire to the final switch, we focus on doing the job right the first time. At Grace Electric, we don't just deliver power — we deliver peace of mind."
-        ,url:'/images/mission.png'
+        title: "OUR ",
+        title1:"MISSION & VALUES",
+        content: "Grace Electric LLC is a fully licensed and insured electrical company gratefully serving Central Origen. With 5+ years of industry experience, we specialize in residential, commercial, and emergency electrical services. Our team is committed to safety, precision, and customer satisfaction — whether it's a small repair or a full-scale installation.",
+        content1:"From the first wire to the final switch, we focus on doing the job right the first time. At Grace Electric, we don't just deliver power — we deliver peace of mind.",
+        url:'/images/mission.png'
     }
 ]

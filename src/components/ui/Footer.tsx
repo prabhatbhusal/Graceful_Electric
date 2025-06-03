@@ -14,9 +14,9 @@ import {
 } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <section className="font-ranade relative w-full bottom-0 px-62.5 py-5  text-lg bg-[url(/images/aboutus.png)] bg-blend-overlay bg-cover bg-center bg-no-repeat  text-white ">
-      <div className="flex md:flex-row flex-col justify-center  py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-90 p-10 ">
+    <section className="font-ranade relative w-full bottom-0 md:px-62.5 p-10 md:py-5  text-lg bg-[url(/images/aboutus.png)] bg-blend-overlay bg-cover bg-center bg-no-repeat  text-white ">
+      <div className="flex md:flex-row flex-col justify-center  md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-center md:gap-90 gap-10 p-10 ">
           {footer.map((item) => (
             <div className="flex flex-col gap-5" key={item.id}>
               <h2 className="text-2xl">{item.title}</h2>
@@ -49,19 +49,19 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="border-1 w-full px-10 " />
-      <div className="flex md:flex-row flex-col justify-between items-center p-12 ">
+      <hr className="border-1 w-full md:px-10 " />
+      <div className="flex md:flex-row flex-col justify-between items-center md:p-10 p-5 gap-5 ">
         <span className="flex items-center gap-3 text-lg">
           <TbHours24 className="text-5xl" /> 24/7 Open
         </span>
-        <div className="flex  items-center gap-6 ">
+        <div className="flex flex-row  items-center gap-6 ">
           <Link
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#b9cfd0] hover:text-[#4267B2] text-2xl transition-colors"
           >
-            <FaFacebookF className="text-5xl" />
+            <FaFacebookF className="md:text-5xl text-2xl" />
           </Link>
           <Link
             href="https://instagram.com"
@@ -69,7 +69,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-[#b9cfd0] hover:text-[#E1306C] text-2xl transition-colors"
           >
-            <FaInstagram className="text-5xl" />
+            <FaInstagram className="md:text-5xl text-2xl" />
           </Link>
           <Link
             href="https://pinterest.com"
@@ -77,7 +77,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-[#b9cfd0] hover:text-[#E60023] text-2xl transition-colors"
           >
-            <FaPinterestP className="text-5xl" />
+            <FaPinterestP className="md:text-5xl text-2xl" />
           </Link>
           <Link
             href="https://x.com"
@@ -85,7 +85,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-[#b9cfd0] hover:text-black text-2xl transition-colors"
           >
-            <FaXTwitter className="text-5xl" />
+            <FaXTwitter className="md:text-5xl text-2xl" />
           </Link>
           <Link
             href="https://youtube.com"
@@ -93,12 +93,12 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-[#b9cfd0] hover:text-[#FF0000] text-2xl transition-colors"
           >
-            <FaYoutube className="text-5xl" />
+            <FaYoutube className="md:text-5xl text-2xl" />
           </Link>
         </div>
       </div>
       <hr className="border-1 w-full " />
-      <div className="p-10 flex justify-between items-center ">
+      <div className="md:p-10 p-3 flex flex-col md:flex-row justify-between items-center ">
         <h2>DESIGNED BY ISTEMLAB AI WEB STUDIOS</h2>
         <h2>
           {" "}

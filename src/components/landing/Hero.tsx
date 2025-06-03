@@ -42,7 +42,7 @@ const Hero = () => {
     setIsVisible(false);
   };
   return (
-    <section className="h-[70vh] font-ranade flex md:flex-row flex-col bg-[#162323e2] bg-blend-multiply text-white overflow-hidden">
+    <section className="md:h-[70vh] font-ranade flex md:flex-row flex-col bg-[#162323e2] bg-blend-multiply text-white overflow-hidden">
       <video
         autoPlay
         muted
@@ -52,8 +52,8 @@ const Hero = () => {
         <source src="/video/bg.mp4" type="video/mp4" />
       </video>
       <div>
-        <div className="px-62.5 pt-10 flex md:flex-row flex-col  gap-40 h-full ">
-          <div className="relative flex md:flex-row flex-col items-center justify-center gap-30  w-full">
+        <div className="md:px-62.5 px-10 py-5 md:pt-10 flex md:flex-row flex-col  md:gap-40 h-full ">
+          <div className="relative flex md:flex-row flex-col items-center justify-center md:gap-30  w-full">
             <div className=" flex flex-col items-center justify-center  overflow-hidden">
               <div className=" w-full">
                 <div
@@ -96,7 +96,7 @@ const Hero = () => {
             </div>
             <div className="flex flex-col  justify-center gap-4 mt-8">
               <div className="flex  items-center gap-4">
-                <h2 className="font-boska font-bold text-[4rem]">15 years</h2>
+                <h2 className="font-boska font-bold md:text-[4rem] text-4xl">15 years</h2>
                 <p className="text-lg">of Industrial <br /> Experience</p>
               </div>
               
