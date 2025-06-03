@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
+import Link from "next/link";
 
 
 
@@ -90,7 +91,7 @@ const Hero = () => {
                     <span className="block font-boska">in Central Oregon</span>
                   </h1>
                 </div>
-                <span className="flex items-center gap-3"><FaArrowDown />Scroll Down</span>
+                <Link href='#'><span className="flex items-center gap-3"><FaArrowDown />Scroll Down</span></Link>
               </div>
             </div>
             <div className="flex flex-col  justify-center gap-4 mt-8">
