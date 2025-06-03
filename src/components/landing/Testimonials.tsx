@@ -13,12 +13,12 @@ type Review = {
 };
 
 const ReviewCard = ({ review }: { review: Review }) => (
-  <div className="w-full h-[268px] flex flex-col justify-center items-center flex-shrink-0 font-ranade bg-[#1f2f30] text-white p-[30px] my-2 rounded-lg">
-    <div className="text-yellow-400 text-xl mb-2">
+  <div className="w-full md:h-[268px] flex flex-col justify-center items-center flex-shrink-0 font-ranade bg-[#1f2f30] text-white p-[30px] my-2 rounded-lg">
+    <div className="text-yellow-400 md:text-xl text-lg mb-2">
       {'★'.repeat(review.rating)}
     </div>
-    <h3 className="text-2xl font-semibold mb-2">{review.name}</h3>
-    <p className="text-xl mb-4 line-clamp-4">{review.message}</p>
+    <h3 className="md:text-2xl text-xl font-semibold mb-2">{review.name}</h3>
+    <p className="md:text-xl text-lg mb-4 line-clamp-4">{review.message}</p>
     <a className="underline text-sm text-gray-300" href="#">{review.service}</a>
   </div>
 );
