@@ -2,8 +2,8 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import React from "react";
-import { Button } from "../ui/button";
-import Link from "next/link";
+import { FaArrowDown } from "react-icons/fa";
+
 
 
 const Hero = () => {
@@ -51,8 +51,8 @@ const Hero = () => {
         <source src="/video/bg.mp4" type="video/mp4" />
       </video>
       <div>
-        <div className="px-62.5 pt-10 flex md:flex-row flex-col flex-wrap  gap-20 h-full ">
-          <div className="relative flex md:flex-row flex-col items-center justify-center gap-10  w-full">
+        <div className="px-62.5 pt-10 flex md:flex-row flex-col  gap-40 h-full ">
+          <div className="relative flex md:flex-row flex-col items-center justify-center gap-30  w-full">
             <div className=" flex flex-col items-center justify-center  overflow-hidden">
               <div className=" w-full">
                 <div
@@ -90,9 +90,16 @@ const Hero = () => {
                     <span className="block font-boska">in Central Oregon</span>
                   </h1>
                 </div>
+                <span className="flex items-center gap-3"><FaArrowDown />Scroll Down</span>
               </div>
             </div>
-            <div className="flex flex-col justify-center gap-4 mt-8">
+            <div className="flex flex-col  justify-center gap-4 mt-8">
+              <div className="flex  items-center gap-4">
+                <h2 className="font-boska font-bold text-[4rem]">15 years</h2>
+                <p className="text-lg">of Industrial <br /> Experience</p>
+              </div>
+              
+              <div className="border-1 border-[#243939] px-4.5 py-5 ">
               <div className="flex items-center gap-4">
                 <Image
                   src="/icons/license.png"
@@ -101,18 +108,15 @@ const Hero = () => {
                   height={100}
                   className="object-contain "
                 />
-                <p className="text-2xl">Licensed. Insured. Trusted </p>
+                <p className="text-lg">Licensed. Insured. Trusted </p>
               </div>
 
-              <p className="md:text-2xl md:w-[500px] ">
+              <p className="md:text-lg md:w-[400px] ">
                 From new installs to emergency repairs, Grace Electric LLC
                 powers homes and businesses with safety, precision, and care.
               </p>
-              <div>
-                <Button size="lg">
-                  <Link href="">Learn More</Link>
-                </Button>
               </div>
+              
             </div>
           </div>
         </div>
