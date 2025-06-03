@@ -4,6 +4,7 @@ import "./globals.css";
 import './styles/fonts.css'
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import Contact from "@/components/landing/Contact";
 // ✅ Correct: relative path from this file (app/layout.tsx)
 
 // Google font
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Contact />
         <Footer />
       </body>
     </html>
